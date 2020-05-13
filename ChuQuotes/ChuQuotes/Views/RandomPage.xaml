@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ChuQuotes.Views.RandomPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="RefreshButton"
+                    Clicked="Refresh_Clicked"
+                    Text="Get New Quote"
+                    Margin="3" />
+            <Button x:Name="FaveButton"
+                    Clicked="Fave_Clicked"
+                    Text="Add To Favorites"
+                    Margin="3" />
+            <Label x:Name="QuoteContent"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Title"
+                   Margin="3"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
